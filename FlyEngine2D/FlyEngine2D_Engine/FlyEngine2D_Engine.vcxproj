@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\BaseGame\BaseGame.h" />
+    <ClInclude Include="src\BoundingBox\BoundingBox.h" />
+    <ClInclude Include="src\Buffers\Buffers.h" />
+    <ClInclude Include="src\ColorCode\ColorCode.h" />
+    <ClInclude Include="src\Color\Color.h" />
+    <ClInclude Include="src\Commons\Commons.h" />
+    <ClInclude Include="src\Debugger\Debugger.h" />
+    <ClInclude Include="src\Entity2D\Entity2D.h" />
+    <ClInclude Include="src\Entity\Entity.h" />
+    <ClInclude Include="src\Exports\Exports.h" />
+    <ClInclude Include="src\Input\Input.h" />
+    <ClInclude Include="src\KeyCode\KeyCode.h" />
+    <ClInclude Include="src\MaterialManager\MaterialManager.h" />
+    <ClInclude Include="src\MaterialSpecification\MaterialSpecification.h" />
+    <ClInclude Include="src\Material\Material.h" />
+    <ClInclude Include="src\Rectangle\Rectangle.h" />
+    <ClInclude Include="src\Renderer\Renderer.h" />
+    <ClInclude Include="src\ShaderManager\ShaderManager.h" />
+    <ClInclude Include="src\Shader\Shader.h" />
+    <ClInclude Include="src\Shape\Shape.h" />
+    <ClInclude Include="src\Sprite\Sprite.h" />
+    <ClInclude Include="src\TextureImporter\TextureImporter.h" />
+    <ClInclude Include="src\TextureManager\TextureManager.h" />
+    <ClInclude Include="src\Texture\Texture.h" />
+    <ClInclude Include="src\Timer\Timer.h" />
+    <ClInclude Include="src\TransformComponent\TransformComponent.h" />
+    <ClInclude Include="src\TransformElement\TransformElement.h" />
+    <ClInclude Include="src\TransformPosition\TransformPosition.h" />
+    <ClInclude Include="src\TransformRotation\TransformRotation.h" />
+    <ClInclude Include="src\TransformScale\TransformScale.h" />
+    <ClInclude Include="src\Transform\Transform.h" />
+    <ClInclude Include="src\Triangle\Triangle.h" />
+    <ClInclude Include="src\VertexAttribute\VertexAttribute.h" />
+    <ClInclude Include="src\Window\Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\BaseGame\BaseGame.cpp" />
+    <ClCompile Include="src\Color\Color.cpp" />
+    <ClCompile Include="src\Commons\Commons.cpp" />
+    <ClCompile Include="src\Debugger\Debugger.cpp" />
+    <ClCompile Include="src\Entity2D\Entity2D.cpp" />
+    <ClCompile Include="src\Entity\Entity.cpp" />
+    <ClCompile Include="src\Input\Input.cpp" />
+    <ClCompile Include="src\MaterialManager\MaterialManager.cpp" />
+    <ClCompile Include="src\MaterialSpecification\MaterialSpecification.cpp" />
+    <ClCompile Include="src\Material\Material.cpp" />
+    <ClCompile Include="src\Rectangle\Rectangle.cpp" />
+    <ClCompile Include="src\Renderer\Renderer.cpp" />
+    <ClCompile Include="src\ShaderManager\ShaderManager.cpp" />
+    <ClCompile Include="src\Shader\Shader.cpp" />
+    <ClCompile Include="src\Shape\Shape.cpp" />
+    <ClCompile Include="src\Sprite\Sprite.cpp" />
+    <ClCompile Include="src\TextureImporter\TextureImporter.cpp" />
+    <ClCompile Include="src\TextureManager\TextureManager.cpp" />
+    <ClCompile Include="src\Texture\Texture.cpp" />
+    <ClCompile Include="src\Timer\Timer.cpp" />
+    <ClCompile Include="src\TransformComponent\TransformComponent.cpp" />
+    <ClCompile Include="src\TransformElement\TransformElement.cpp" />
+    <ClCompile Include="src\TransformPosition\TransformPosition.cpp" />
+    <ClCompile Include="src\TransformRotation\TransformRotation.cpp" />
+    <ClCompile Include="src\TransformScale\TransformScale.cpp" />
+    <ClCompile Include="src\Transform\Transform.cpp" />
+    <ClCompile Include="src\Triangle\Triangle.cpp" />
+    <ClCompile Include="src\Window\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Shaders\defaultBasicFragment.shader" />
+    <None Include="res\Shaders\defaultBasicVertex.shader" />
+    <None Include="res\Shaders\textureShaderFragment.shader" />
+    <None Include="res\Shaders\textureShaderVertex.shader" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{fcc6220a-71c4-45be-8604-b5bee62cde9a}</ProjectGuid>
+    <RootNamespace>FlyEngine2DEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)bin\$(Configuration)\$(Platform)</OutDir>
+    <IntDir>$(ProjectDir)obj\$(Configuration)\$(Platform)</IntDir>
+    <TargetName>FlyEngine2D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)bin\$(Configuration)\$(Platform)</OutDir>
+    <IntDir>$(ProjectDir)obj\$(Configuration)\$(Platform)</IntDir>
+    <TargetName>FlyEngine2D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)bin\$(Configuration)\$(Platform)</OutDir>
+    <IntDir>$(ProjectDir)obj\$(Configuration)\$(Platform)</IntDir>
+    <TargetName>FlyEngine2D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)bin\$(Configuration)\$(Platform)</OutDir>
+    <IntDir>$(ProjectDir)obj\$(Configuration)\$(Platform)</IntDir>
+    <TargetName>FlyEngine2D</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);FLY_EXPORTS;FLY_EXPORTS;FLY_EXPORTS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)Dependencies\GLEW\include\GLEW;$(ProjectDir)Dependencies\GLFW\include\GLFW;$(ProjectDir)Dependencies\GLM\glm;$(ProjectDir)Dependencies\STB;$(ProjectDir)src;$(SolutionDir)Exports;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)Dependencies\GLFW\library;$(ProjectDir)Dependencies\GLEW\library;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3dll.lib;glew32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y "$(OutDir)FlyEngine2D.dll" "$(SolutionDir)FlyEngine2D_Game\Dependencies\FlyEngine2D\dll"
+copy /y "$(OutDir)FlyEngine2D.lib" "$(SolutionDir)FlyEngine2D_Game\Dependencies\FlyEngine2D\library"
+if not exist "$(SolutionDir)FlyEngine2D_Game\Dependencies\Auxiliar\glfw3.dll" (copy "$(ProjectDir)Dependencies\GLFW\dll\glfw3.dll" "$(SolutionDir)FlyEngine2D_Game\Dependencies\Auxiliar" &amp;&amp; echo Archivo copiado correctamente.)
+if not exist "$(SolutionDir)FlyEngine2D_Game\Dependencies\Auxiliar\glew32.dll" (copy "$(ProjectDir)Dependencies\GLEW\dll\glew32.dll" "$(SolutionDir)FlyEngine2D_Game\Dependencies\Auxiliar" &amp;&amp; echo Archivo copiado correctamente.)
+ 
+IF EXIST "$(SolutionDir)FlyEngine2D_Game\res\Shaders" (RMDIR /S /Q "$(SolutionDir)FlyEngine2D_Game\res\Shaders" ECHO Carpeta shaders eliminada en Testing.)
+IF NOT EXIST "$(SolutionDir)FlyEngine2D_Game\res\Shaders" (MKDIR "$(SolutionDir)FlyEngine2D_Game\res\Shaders")
+IF EXIST "$(SolutionDir)FlyEngine2D_Game\res\Shaders" ( XCOPY "$(ProjectDir)res\Shaders" "$(SolutionDir)FlyEngine2D_Game\res\Shaders" /e /h /y /s  ) ELSE ( ECHO SHADERS FOLDER-TESTING DOES NOT EXIST )
+
+IF EXIST "$(SolutionDir)FlyEngine2D_Game\res\Textures" (RMDIR /S /Q "$(SolutionDir)FlyEngine2D_Game\res\Textures" ECHO Carpeta shaders eliminada en Testing. )
+IF NOT EXIST "$(SolutionDir)FlyEngine2D_Game\res\Textures" (MKDIR "$(SolutionDir)FlyEngine2D_Game\res\Textures")
+IF EXIST "$(SolutionDir)FlyEngine2D_Game\res\Textures" ( XCOPY "$(ProjectDir)res\Textures" "$(SolutionDir)FlyEngine2D_Game\res\Textures" /e /h /y /s ) ELSE ( ECHO SHADERS FOLDER-TESTING DOES NOT EXIST )</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);FLY_EXPORTS;FLY_EXPORTS;FLY_EXPORTS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)Dependencies\GLEW\include\GLEW;$(ProjectDir)Dependencies\GLFW\include\GLFW;$(ProjectDir)Dependencies\GLM\glm;$(ProjectDir)Dependencies\STB;$(ProjectDir)src;$(SolutionDir)Exports;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)Dependencies\GLFW\library;$(ProjectDir)Dependencies\GLEW\library;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3dll.lib;glew32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y "$(OutDir)FlyEngine2D.dll" "$(SolutionDir)FlyEngine2D_Game\Dependencies\FlyEngine2D\dll"
+copy /y "$(OutDir)FlyEngine2D.lib" "$(SolutionDir)FlyEngine2D_Game\Dependencies\FlyEngine2D\library"
+if not exist "$(SolutionDir)FlyEngine2D_Game\Dependencies\Auxiliar\glfw3.dll" (copy "$(ProjectDir)Dependencies\GLFW\dll\glfw3.dll" "$(SolutionDir)FlyEngine2D_Game\Dependencies\Auxiliar" &amp;&amp; echo Archivo copiado correctamente.)
+if not exist "$(SolutionDir)FlyEngine2D_Game\Dependencies\Auxiliar\glew32.dll" (copy "$(ProjectDir)Dependencies\GLEW\dll\glew32.dll" "$(SolutionDir)FlyEngine2D_Game\Dependencies\Auxiliar" &amp;&amp; echo Archivo copiado correctamente.)
+ 
+IF EXIST "$(SolutionDir)FlyEngine2D_Game\res\Shaders" (RMDIR /S /Q "$(SolutionDir)FlyEngine2D_Game\res\Shaders" ECHO Carpeta shaders eliminada en Testing.)
+IF NOT EXIST "$(SolutionDir)FlyEngine2D_Game\res\Shaders" (MKDIR "$(SolutionDir)FlyEngine2D_Game\res\Shaders")
+IF EXIST "$(SolutionDir)FlyEngine2D_Game\res\Shaders" ( XCOPY "$(ProjectDir)res\Shaders" "$(SolutionDir)FlyEngine2D_Game\res\Shaders" /e /h /y /s  ) ELSE ( ECHO SHADERS FOLDER-TESTING DOES NOT EXIST )
+
+IF EXIST "$(SolutionDir)FlyEngine2D_Game\res\Textures" (RMDIR /S /Q "$(SolutionDir)FlyEngine2D_Game\res\Textures" ECHO Carpeta shaders eliminada en Testing. )
+IF NOT EXIST "$(SolutionDir)FlyEngine2D_Game\res\Textures" (MKDIR "$(SolutionDir)FlyEngine2D_Game\res\Textures")
+IF EXIST "$(SolutionDir)FlyEngine2D_Game\res\Textures" ( XCOPY "$(ProjectDir)res\Textures" "$(SolutionDir)FlyEngine2D_Game\res\Textures" /e /h /y /s ) ELSE ( ECHO SHADERS FOLDER-TESTING DOES NOT EXIST )</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);FLY_EXPORTS;FLY_EXPORTS;FLY_EXPORTS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)Dependencies\GLEW\include\GLEW;$(ProjectDir)Dependencies\GLFW\include\GLFW;$(ProjectDir)Dependencies\GLM\glm;$(ProjectDir)Dependencies\STB;$(ProjectDir)src;$(SolutionDir)Exports;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)Dependencies\GLFW\library;$(ProjectDir)Dependencies\GLEW\library;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3dll.lib;glew32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y "$(OutDir)FlyEngine2D.dll" "$(SolutionDir)FlyEngine2D_Game\Dependencies\FlyEngine2D\dll"
+copy /y "$(OutDir)FlyEngine2D.lib" "$(SolutionDir)FlyEngine2D_Game\Dependencies\FlyEngine2D\library"
+if not exist "$(SolutionDir)FlyEngine2D_Game\Dependencies\Auxiliar\glfw3.dll" (copy "$(ProjectDir)Dependencies\GLFW\dll\glfw3.dll" "$(SolutionDir)FlyEngine2D_Game\Dependencies\Auxiliar" &amp;&amp; echo Archivo copiado correctamente.)
+if not exist "$(SolutionDir)FlyEngine2D_Game\Dependencies\Auxiliar\glew32.dll" (copy "$(ProjectDir)Dependencies\GLEW\dll\glew32.dll" "$(SolutionDir)FlyEngine2D_Game\Dependencies\Auxiliar" &amp;&amp; echo Archivo copiado correctamente.)
+ 
+IF EXIST "$(SolutionDir)FlyEngine2D_Game\res\Shaders" (RMDIR /S /Q "$(SolutionDir)FlyEngine2D_Game\res\Shaders" ECHO Carpeta shaders eliminada en Testing.)
+IF NOT EXIST "$(SolutionDir)FlyEngine2D_Game\res\Shaders" (MKDIR "$(SolutionDir)FlyEngine2D_Game\res\Shaders")
+IF EXIST "$(SolutionDir)FlyEngine2D_Game\res\Shaders" ( XCOPY "$(ProjectDir)res\Shaders" "$(SolutionDir)FlyEngine2D_Game\res\Shaders" /e /h /y /s  ) ELSE ( ECHO SHADERS FOLDER-TESTING DOES NOT EXIST )
+
+IF EXIST "$(SolutionDir)FlyEngine2D_Game\res\Textures" (RMDIR /S /Q "$(SolutionDir)FlyEngine2D_Game\res\Textures" ECHO Carpeta shaders eliminada en Testing. )
+IF NOT EXIST "$(SolutionDir)FlyEngine2D_Game\res\Textures" (MKDIR "$(SolutionDir)FlyEngine2D_Game\res\Textures")
+IF EXIST "$(SolutionDir)FlyEngine2D_Game\res\Textures" ( XCOPY "$(ProjectDir)res\Textures" "$(SolutionDir)FlyEngine2D_Game\res\Textures" /e /h /y /s ) ELSE ( ECHO SHADERS FOLDER-TESTING DOES NOT EXIST )</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);FLY_EXPORTS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)Dependencies\GLEW\include\GLEW;$(ProjectDir)Dependencies\GLFW\include\GLFW;$(ProjectDir)Dependencies\GLM\glm;$(ProjectDir)Dependencies\STB;$(ProjectDir)src;$(SolutionDir)Exports;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)Dependencies\GLFW\library;$(ProjectDir)Dependencies\GLEW\library;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3dll.lib;glew32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y "$(OutDir)FlyEngine2D.dll" "$(SolutionDir)FlyEngine2D_Game\Dependencies\FlyEngine2D\dll"
+copy /y "$(OutDir)FlyEngine2D.lib" "$(SolutionDir)FlyEngine2D_Game\Dependencies\FlyEngine2D\library"
+if not exist "$(SolutionDir)FlyEngine2D_Game\Dependencies\Auxiliar\glfw3.dll" (copy "$(ProjectDir)Dependencies\GLFW\dll\glfw3.dll" "$(SolutionDir)FlyEngine2D_Game\Dependencies\Auxiliar" &amp;&amp; echo Archivo copiado correctamente.)
+if not exist "$(SolutionDir)FlyEngine2D_Game\Dependencies\Auxiliar\glew32.dll" (copy "$(ProjectDir)Dependencies\GLEW\dll\glew32.dll" "$(SolutionDir)FlyEngine2D_Game\Dependencies\Auxiliar" &amp;&amp; echo Archivo copiado correctamente.)
+ 
+IF EXIST "$(SolutionDir)FlyEngine2D_Game\res\Shaders" (RMDIR /S /Q "$(SolutionDir)FlyEngine2D_Game\res\Shaders" ECHO Carpeta shaders eliminada en Testing.)
+IF NOT EXIST "$(SolutionDir)FlyEngine2D_Game\res\Shaders" (MKDIR "$(SolutionDir)FlyEngine2D_Game\res\Shaders")
+IF EXIST "$(SolutionDir)FlyEngine2D_Game\res\Shaders" ( XCOPY "$(ProjectDir)res\Shaders" "$(SolutionDir)FlyEngine2D_Game\res\Shaders" /e /h /y /s  ) ELSE ( ECHO SHADERS FOLDER-TESTING DOES NOT EXIST )
+
+IF EXIST "$(SolutionDir)FlyEngine2D_Game\res\Textures" (RMDIR /S /Q "$(SolutionDir)FlyEngine2D_Game\res\Textures" ECHO Carpeta shaders eliminada en Testing. )
+IF NOT EXIST "$(SolutionDir)FlyEngine2D_Game\res\Textures" (MKDIR "$(SolutionDir)FlyEngine2D_Game\res\Textures")
+IF EXIST "$(SolutionDir)FlyEngine2D_Game\res\Textures" ( XCOPY "$(ProjectDir)res\Textures" "$(SolutionDir)FlyEngine2D_Game\res\Textures" /e /h /y /s ) ELSE ( ECHO SHADERS FOLDER-TESTING DOES NOT EXIST )</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

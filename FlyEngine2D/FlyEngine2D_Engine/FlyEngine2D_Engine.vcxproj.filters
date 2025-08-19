@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{82297910-149e-48ec-baaa-e878b6c17b2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Window">
+      <UniqueIdentifier>{12060ed9-993f-494a-9f62-06a8224785aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rectangle">
+      <UniqueIdentifier>{a3ec9ad1-e147-4c4f-87f6-951d39750363}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseGame">
+      <UniqueIdentifier>{b52cb250-47b3-4cf8-97c9-1c7edde86dbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exports">
+      <UniqueIdentifier>{62ec01a5-45b3-48b9-9a08-455cf4183e2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{5cf6d618-2afb-4b44-b3c3-1642c0a13956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VertexAttributes">
+      <UniqueIdentifier>{f182ad0b-eed2-4879-8e0d-e257c6956919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Color">
+      <UniqueIdentifier>{09e48514-18e0-4f74-a359-a970a94578e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ColorCode">
+      <UniqueIdentifier>{54b8fcc1-be4c-4342-a72e-cf659032b1a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Commons">
+      <UniqueIdentifier>{15854eca-d628-4f2e-a5a8-2d249f857760}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buffers">
+      <UniqueIdentifier>{2efcc07a-e8d6-40d0-89d1-e3e0d93f3e64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers">
+      <UniqueIdentifier>{61201971-3f03-465b-9e2d-f3438cb1705d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers\ShaderManager">
+      <UniqueIdentifier>{4a3c6c03-8e4c-439b-a1d6-37899cde413b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers\TextureManager">
+      <UniqueIdentifier>{818b4fd3-e53c-4169-830d-0a927e32fc68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Texture">
+      <UniqueIdentifier>{42743199-e96b-426e-95a7-78c9d982299a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Importers">
+      <UniqueIdentifier>{75f4e3e4-91f8-47da-993d-e976111bae06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Importers\TextureImporter">
+      <UniqueIdentifier>{68a14b93-a1da-4111-ad6b-b4b044355e86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debugger">
+      <UniqueIdentifier>{ea1daf6a-fe66-403a-8bf6-58cb6ef5e7d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers\MaterialManager">
+      <UniqueIdentifier>{518b8373-d27c-4b27-b366-7db051854b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Material">
+      <UniqueIdentifier>{eeb218c8-494f-441b-821e-782f17bd84de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MaterialSpecification">
+      <UniqueIdentifier>{14a35f74-cf97-44f3-9dbe-97522eb0a4ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sprite">
+      <UniqueIdentifier>{ee323bf6-0303-4416-a883-e75067dbe0f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enitity">
+      <UniqueIdentifier>{d8603e16-0276-496c-a116-4fce02b6690f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity2D">
+      <UniqueIdentifier>{a0b206a9-7522-4ba1-a877-3d8441ff0287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Transform">
+      <UniqueIdentifier>{9e0965e3-7017-42a9-8a00-3c8c404eda64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TransformComponent">
+      <UniqueIdentifier>{389b5ae9-82ca-4ef5-b9fb-69d5638432ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TransformElement">
+      <UniqueIdentifier>{175eb3a8-a4ac-4e71-9dfb-7de6ee6d62e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TransformPosition">
+      <UniqueIdentifier>{d85e124c-f3a8-4bf7-a83e-02fab669a574}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TransformRotation">
+      <UniqueIdentifier>{1988674e-bbd2-4e75-82ee-f73845c78d2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TransformScale">
+      <UniqueIdentifier>{fb90d50c-cc95-4e05-afdb-227e44ec1e4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BoundingBox">
+      <UniqueIdentifier>{32c0c609-ed77-41a0-b895-aba9eba4702a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KeyCode">
+      <UniqueIdentifier>{7afc1907-3c38-4064-98ce-3d67714569a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{9909b2c0-7e5c-43c0-bcb6-dbe7ffb4873a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timer">
+      <UniqueIdentifier>{8c0d8070-80f4-42a4-a43f-c6e11e8ecce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shape">
+      <UniqueIdentifier>{98e30b3a-b96d-4b61-a577-c242e0c2bf36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Triangle">
+      <UniqueIdentifier>{3c538051-cdbb-4e62-a69f-33c279c6fb31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{e8a1b972-227d-40ed-8411-c78b6d297aee}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\BaseGame\BaseGame.h">
+      <Filter>BaseGame</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Exports\Exports.h">
+      <Filter>Exports</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Window\Window.h">
+      <Filter>Window</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderer\Renderer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shader\Shader.h">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VertexAttribute\VertexAttribute.h">
+      <Filter>VertexAttributes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Color\Color.h">
+      <Filter>Color</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ColorCode\ColorCode.h">
+      <Filter>ColorCode</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Commons\Commons.h">
+      <Filter>Commons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Buffers\Buffers.h">
+      <Filter>Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ShaderManager\ShaderManager.h">
+      <Filter>Managers\ShaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TextureManager\TextureManager.h">
+      <Filter>Managers\TextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Texture\Texture.h">
+      <Filter>Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TextureImporter\TextureImporter.h">
+      <Filter>Importers\TextureImporter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Debugger\Debugger.h">
+      <Filter>Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MaterialManager\MaterialManager.h">
+      <Filter>Managers\MaterialManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Material\Material.h">
+      <Filter>Material</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MaterialSpecification\MaterialSpecification.h">
+      <Filter>MaterialSpecification</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sprite\Sprite.h">
+      <Filter>Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entity\Entity.h">
+      <Filter>Enitity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entity2D\Entity2D.h">
+      <Filter>Entity2D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Transform\Transform.h">
+      <Filter>Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TransformComponent\TransformComponent.h">
+      <Filter>TransformComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TransformElement\TransformElement.h">
+      <Filter>TransformElement</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TransformPosition\TransformPosition.h">
+      <Filter>TransformPosition</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TransformRotation\TransformRotation.h">
+      <Filter>TransformRotation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TransformScale\TransformScale.h">
+      <Filter>TransformScale</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BoundingBox\BoundingBox.h">
+      <Filter>BoundingBox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KeyCode\KeyCode.h">
+      <Filter>KeyCode</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Input\Input.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Timer\Timer.h">
+      <Filter>Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shape\Shape.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Rectangle\Rectangle.h">
+      <Filter>Rectangle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Triangle\Triangle.h">
+      <Filter>Triangle</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\BaseGame\BaseGame.cpp">
+      <Filter>BaseGame</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Window\Window.cpp">
+      <Filter>Window</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderer\Renderer.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shader\Shader.cpp">
+      <Filter>Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Color\Color.cpp">
+      <Filter>Color</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Commons\Commons.cpp">
+      <Filter>Commons</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ShaderManager\ShaderManager.cpp">
+      <Filter>Managers\ShaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TextureManager\TextureManager.cpp">
+      <Filter>Managers\TextureManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Texture\Texture.cpp">
+      <Filter>Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TextureImporter\TextureImporter.cpp">
+      <Filter>Importers\TextureImporter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Debugger\Debugger.cpp">
+      <Filter>Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MaterialManager\MaterialManager.cpp">
+      <Filter>Managers\MaterialManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Material\Material.cpp">
+      <Filter>Material</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MaterialSpecification\MaterialSpecification.cpp">
+      <Filter>MaterialSpecification</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sprite\Sprite.cpp">
+      <Filter>Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entity\Entity.cpp">
+      <Filter>Enitity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entity2D\Entity2D.cpp">
+      <Filter>Entity2D</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Transform\Transform.cpp">
+      <Filter>Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransformComponent\TransformComponent.cpp">
+      <Filter>TransformComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransformElement\TransformElement.cpp">
+      <Filter>TransformElement</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransformPosition\TransformPosition.cpp">
+      <Filter>TransformPosition</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransformRotation\TransformRotation.cpp">
+      <Filter>TransformRotation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransformScale\TransformScale.cpp">
+      <Filter>TransformScale</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Input\Input.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Timer\Timer.cpp">
+      <Filter>Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shape\Shape.cpp">
+      <Filter>Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Rectangle\Rectangle.cpp">
+      <Filter>Rectangle</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Triangle\Triangle.cpp">
+      <Filter>Triangle</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Shaders\defaultBasicFragment.shader">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="res\Shaders\defaultBasicVertex.shader">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="res\Shaders\textureShaderFragment.shader">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="res\Shaders\textureShaderVertex.shader">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
